@@ -1,0 +1,164 @@
+.slider{
+    height: 560px;
+    margin: auto;
+    max-width: 100%;
+    background-color: var(--white2-color);
+}
+
+.slider_female_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.slider_female_img img,
+.slider_male_img img{
+    width: 681px;
+    height: 100%;
+}
+.slider_female_content{
+    position: absolute; /* Đặt vị trí tuyệt đối để đè lên hình ảnh */
+    top: 40%; /* Đưa nội dung lên 50% chiều cao của container */
+    left: 80%; /* Đưa nội dung vào giữa chiều rộng của container */
+    transform: translate(-50%, -50%); /* Dịch chuyển nội dung lên và sang trái 50% của chính nó */
+    padding: 10px; /* Khoảng cách nội dung với viền container */
+    text-align: center;
+}
+.slider_heading{
+    height: auto;
+    width: auto;
+    color: var(--primary-color);
+    font-size: 60px;
+    font-family: "Dancing Script&quot", cursive,Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0px;
+    animation: slide-top 1s;
+}
+
+.slider_sub{
+    height: auto;
+    width: auto;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 600;
+    animation: slide-top  2s;
+}
+.slider_saleoff{
+    font-size: 36px;
+    text-transform: uppercase;
+    animation: slide-top 3s;
+
+}
+.slider_btns{
+    margin-top: 20px;
+}
+.slider_btns1,
+.slider_btns2{
+    font-weight: 600;
+    width: 112px;
+    height: 42px;
+    cursor: pointer;
+}
+.slider_btns1{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    margin-right: 5px;
+    animation: slide-top 4s;
+
+}
+.slider_btns1:hover{
+    background-color: var(--hover-color);
+}
+.slider_btns2{
+    margin-left: 5px;
+    background-color: var(--white-color);
+    border: 3px solid var(--primary-color);
+    color: var(--primary-color);
+    animation: slide-top 5s;
+
+}
+.slider_btns2:hover{
+    background-color: var(--border-color);
+}
+/* --------------------------- */
+
+.slider_male_img{
+    position: relative;
+    left: 30%;    
+    width: 100%;
+    height: 100%;
+}
+
+.slider_male_content{
+    position: absolute; /* Đặt vị trí tuyệt đối để đè lên hình ảnh */
+    top: 40%; /* Đưa nội dung lên 50% chiều cao của container */
+    right: 40%; /* Đưa nội dung vào giữa chiều rộng của container */
+    transform: translate(-50%, -50%); /* Dịch chuyển nội dung lên và sang trái 50% của chính nó */
+    padding: 10px; /* Khoảng cách nội dung với viền container */
+    text-align: center;
+}
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slider_active{ /* là slider */
+    position: relative;
+}
+.slider_list{/* là list */
+    /* position: absolute; */
+
+    height: 100%;
+    display: flex;
+    width: max-content;
+}
+.slider_items{/* là item */
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    line-height: 50px;
+}
+.slider_buttons{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider_buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-family: monospace;
+    font-weight: bold;
+
+}
+.slider_dots{
+    position: absolute;
+    bottom: 10px;
+    color: var(--primary-color);
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider_dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--hover-color);
+    margin: 20px;
+    border-radius: 50%;
+}
+.slider_dots li:active{
+    width: 30px;
+    height: 30px;
+}

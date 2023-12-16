@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #c62127;
+    --primary-hover-color: #048567;
+    --secondary-color: #9e7856;
+    --secondary-hover-color: #ae8866;
+    --primary-admin-color: #212b36;
+    --primary-admin-hover-color: #313f4e;
+    --text-color: #212121;
+    --text-color2: #444;
+
+    --white-color: #fff;
+    --black-color: #000;
+    --red-color-lighter: #a8000d;
+    --red-color: #8c000a;
+    --red-hover-color-darker: #660005;
+    --font-family: 'Montserrat',sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+}
+
+.divide{
+    height: 60%;
+}
+.small_divide{
+    width: 100%;
+    height: 30px;
+}

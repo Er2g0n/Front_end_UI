@@ -1,0 +1,206 @@
+.login-modal{
+    display: none;
+}
+.login-modal-inner{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+/* Class dùng Javascript để mở */
+.js-modal.open{
+    display: block;
+}
+.login-modal-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.login-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    color: blueviolet;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+.login-close:hover{
+    opacity: 1;
+}
+.login_form-content{
+    margin: auto;
+    width: 700px;
+    height: 272px;
+    display: flex;
+    align-items: center;
+}
+.login_form-container{
+    position: relative;
+    background: var(--white-color);
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    margin: auto; /* Giúp căn giữa  */
+    animation: modalFaceIn ease 0.8s;
+    /* animation: modalFaceOut ease 0.8s; */
+
+}
+@keyframes modalFaceIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* @keyframes modalFaceOut{
+    from{
+        opacity: 1;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(0);
+    }
+} */
+.login-left{
+    width: 40%;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.login-left-content{
+    width: 200px;
+    height: 180px;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    
+}
+.login-left-content h1{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.login-left-content p{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-style: var(--site-primary-font);
+}
+.login-right{
+    width: 60%;
+    height: 100%;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.login-right-content{
+    width: 80%;
+}
+.login-right-input-group{
+    
+}
+.login-right-input{
+    border-color: #777;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 42px;
+    font: var(--site-primary-font);
+    border: 1px 1px 1px 1px ;
+    border-style: solid;
+    border-color: var(--border-color);
+    overflow: visible;
+    transition: font 0.3s ease-out; /* Hiệu ứng chuyển đổi */
+    opacity: 1; /* Độ mờ ban đầu của chữ placeholder */
+}
+.login-right-input::placeholder{
+    font-size: 1.4rem;
+    padding: 4px 0px 4px 10px;
+   
+}
+
+
+.login-right-input[type="text"]:focus,
+.login-right-input[type="password"]:focus{
+    color: var(--text-color);
+    font-size: 20px;
+    outline: none;
+    padding-left: 10px;
+
+}
+
+
+.login-aside, .login-lostpass a{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-decoration: none;
+    width: 100%;
+}
+.login-aside-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input[type="checkbox"] {
+    margin-right: 5px;
+   appearance: none;
+   -webkit-appearance: none;
+   height: 18px;
+   width: 18px;
+   border-radius: 2px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid var(--border-color);
+   outline: none;
+}
+input[type="checkbox"]::after{
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: none;
+}
+input[type="checkbox"]:checked{
+    background-color: var(--primary-color);
+}
+input[type="checkbox"]:checked::after{
+    display: block;
+}
+.login-btn{
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    font-weight: 500;
+    width: 100%;
+    padding: 6px;
+}
+.login-btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+.navbar_container{
+    position: absolute;
+
+    width: 100%;
+}
+.navbar{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.navbar_links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_links a{
+    text-decoration: none;
+    text-align: center;
+    color: #ccc;
+
+    margin: 0 20px;
+    transition: transform 0.9s ease-in-out,color 0.5s ease;
+    position: relative; /* Required for pseudo-elements */
+
+}
+.navbar_links a:hover{
+    color: white;
+}
+.navbar_links a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0); /* Initial width is 0, making it invisible */
+    transform-origin: center;
+    transition: transform 0.3s ease; /* Smooth transition for width change */
+}
+.navbar_links a:hover::before {
+    transform: scaleX(1); /* Gradually increase width to 100% on hover */
+}

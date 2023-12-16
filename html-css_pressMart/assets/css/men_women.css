@@ -1,0 +1,47 @@
+.men_women{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.men_women_contain{
+    position: relative;
+    display: inline-block;
+    width: 580px;
+    height: 240px;
+    overflow: hidden;
+}
+.men_women_contain img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.men_women_contain:hover img{
+    transform: scale(1.1);
+}
+.men_women_word{
+    color: var(--white-color);
+    display: inline-block;
+    line-height: 30px;
+    position: relative;
+    bottom: 200px;
+    left: 40px;
+}
+.men_women_1{
+    font-size: 17px;
+    font-weight: 600;
+}
+.men_women_2{
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+.men_women_3{
+    font-size: 19px;
+}
+.men_women_link {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--white-color);
+    font-weight: 600;
+}

@@ -1,0 +1,95 @@
+.cart-modal{
+    display: none;
+}
+#js-cart-form.showCart{
+    display: block;
+}
+.cart-modal-inner{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cart-modal-overlay{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cart-modal-container{
+    background-color: var(--white-color);
+    position: relative;
+    width: 350px;
+    height: 100%; 
+    animation: modalSideIn ease 0.4s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+@keyframes modalSideIn{
+    from{
+        opacity: 0;
+        transform: translateX(140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.cart-modal-heading{
+    width: 100%;
+    height: 60px; 
+    padding: 20px 20px 20px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid var(--border-color);
+    justify-content: space-between;
+    font-style: var(--site-primary-font);
+}
+.cart-modal-close-incon{
+    font-size: 1.4rem;
+}
+.cart-modal-close-incon:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+    
+}
+.cart-modal-content{
+    /* background-color: aqua; */
+    margin-top: 40px;
+    height: 50%;
+    line-height: 10;
+    align-items: center;    
+    display: flex;
+    flex-direction: column;
+}
+.cart-modal-icon{
+    font-size: 120px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.cart-modal-para{
+    font-weight: 600;
+    font-size: 14px;
+    font-style: var(--site-primary-font);
+    color: var(--text-color);
+}
+.cart-modal-btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+    line-height: 1.2;
+}
+.cart-modal-btn:hover{
+    background-color: var(--hover-color);
+    cursor: pointer;
+}

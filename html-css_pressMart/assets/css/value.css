@@ -1,0 +1,33 @@
+.value{
+    width: 100%;
+    height: 75px;
+    margin-bottom: 3rem;
+}
+.value_ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.value_li{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    padding: 0px 10px;
+
+}
+.value_icon{
+    font-size: 46px;
+    color: var(--primary-color);
+}
+.value_span_p{
+    line-height: 30px;
+    margin-left: 20px;
+}
+.value_word{
+    font-size: 14px;
+}
+.value_p{
+    font-size: 12px;
+
+}

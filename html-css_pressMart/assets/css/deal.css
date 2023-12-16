@@ -1,0 +1,222 @@
+.deal{
+    height: 510px;
+    width: 100%;
+}
+.deal_word h3{
+    display: inline-block;
+    line-height: 2;
+    position: relative;
+    font-size: 20px;
+    width: 20%;
+    letter-spacing: 1px;
+}
+
+.deal_word_line{
+    display: flex;
+    width: 100%;
+}
+.deal_word_line1{
+    border-bottom: 3px solid var(--primary-color);
+    width: 15%;
+}
+.deal_word_line2{
+    border-bottom: 3px solid var(--border-color);
+    width: 80%;
+}
+.deal_flex{    
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deal_product{
+    width: 100%;
+    height: 550px;
+    display: inline-block;
+    position: relative;
+    margin: 0px 5px 0 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in;
+}
+.deal_product:hover{
+    box-shadow: 1px 1px 5px -5px rgba(0, 0, 0, 0.3);
+    background-color: var(--white2-color);
+}
+.deal_sticker{
+    color: var(--white-color);
+    position: absolute;
+}
+.deal_off{
+    background-color: var(--green-color);
+    padding: 6px;
+}
+.deal_featured{
+    background-color: var(--yellow-gold-color);
+    padding: 6px;
+
+}
+.deal_product img{
+    width: 100%;
+    height: auto;
+    
+}
+.deal_view{
+    display: none;
+}
+.deal_img{
+    background-image: url(/assets/img/Watch-Category-150x150.jpg);
+    width: 100%;
+    height: 42%;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+.deal_img:hover{
+    animation: dealOn ease-in-out .7s;
+    background-image: url(/assets/img/Bags-Category-150x150.jpg);
+}
+
+.deal_view a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 14px;
+    padding: 6px;
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 100%;
+    top: 222px;
+}
+.deal_info{
+    margin-top: 30px;
+    height: 100%;
+    line-height: 24px;
+    width: 100%;
+}
+.deal_category_name{
+    font-size: 12px;
+    color: var(--text-color);
+}
+.deal_name_link a{
+    font-size: 15px;
+    color: var(--black-color);
+    text-decoration: none;
+}
+.deal_rate_stars{
+    font-size: 12px;
+}
+.deal_rate_stars i{
+    color: var(--yellow-gold-color);
+}
+.deal_rate_stars span{
+    margin-left: 6px;
+}
+.deal_price{
+    font-size: 15px;
+    font-weight: 600;
+}
+.deal_price span{
+    text-decoration: line-through;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: normal;
+}
+.deal_btn_icon{
+    display: flex;
+}
+.deal_info button{
+    color: var(--text-color);
+    border: none;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.deal_color_size{
+    display: none;
+}
+.deal_heart,.deal_shuffle {
+    margin-left: 5px;
+    font-size: 15px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+.deal_heart:hover,.deal_shuffle:hover{
+    color: var(--primary-color);
+}
+.deal_color{
+    margin-top: 5px;
+    display: flex;
+}
+.deal_color li{
+    list-style: none;
+    margin-right: 20px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.deal_color li.border{
+    border-color: 2px solid var(--primary-color);
+}
+.deal_color_red{
+    background-color: brown;
+}
+.deal_color_blue{
+    background-color: blue;
+}
+.deal_color_yellow{
+    background-color: var(--yellow-gold-color);
+}
+.deal_size{
+    margin-top: 5px;
+    display: flex;
+}
+.deal_size li{
+    list-style: none;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    border-color: 2px solid transparent;
+    background-color: var(--white-color);
+}
+
+.deal_size li.circle{
+    border-color: 2px solid var(--primary-color);
+}
+
+.deal_product:hover .deal_product{
+    animation: dealOn ease-in-out 0.7;
+    
+} 
+.deal_product:hover .deal_name_link a{
+    color: var(--primary-color);
+    animation: dealOn ease-in-out 0.7;
+}
+.deal_product:hover button{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    animation: dealOn ease-in-out 0.7;
+}
+.deal_product:hover .deal_heart,
+.deal_product:hover .deal_shuffle{
+    display: inline-block;
+    animation: dealOn ease-in-out 0.7;
+
+}
+.deal_product:hover .deal_color_size{
+    display: block;
+    animation: dealOn ease-in-out 0.7s;
+}
+.deal_product:hover .deal_view{
+    display: block;
+    animation: dealOn ease-in-out 0.7s;
+}
